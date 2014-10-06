@@ -1,0 +1,200 @@
+@import "reset.css";
+
+@font-face {
+    font-family: checkBoxFont;
+    src: url("../fonts/fontello.woff");
+}
+
+body {
+    background-image: url("../images/colorful_dots_on_black.jpg");
+    font-family: Tahoma,Geneva,Kalimati,sans-serif;
+}
+
+body > header {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    color: #FFFF00;
+    text-align: center;
+    background: -ms-linear-gradient(left, #FF0000, #FF0000 34%, #008000 34%, #008000 67%, #0000FF 67%, #0000FF);
+    background: -webkit-linear-gradient(left, #FF0000, #FF0000 34%, #008000 34%, #008000 67%, #0000FF 67%, #0000FF);
+    background: -moz-linear-gradient(left, #FF0000, #FF0000 34%, #008000 34%, #008000 67%, #0000FF 67%, #0000FF);
+}
+
+aside > nav > header {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: inline-block;
+    float: left;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-right: 44px;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-right: 24px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+li:before {
+    display: inline-block;
+    font-family: "checkBoxFont";
+    font-size: 25px;
+    text-align: center;
+    content: "\2713";
+    color: #FFFFFF;
+    background-color: #8DCF29;
+    width:18px;
+    height:18px;
+    border:1px solid #b7b7b7;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-right: 10px;
+    padding: 2px;
+    vertical-align: -10%;
+}
+
+li {
+    padding: 10px;
+    padding-right: 80px;
+    border-radius: 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+li > a {
+    color: #000000;
+    text-decoration: none;
+}
+
+li > a:visited {
+    color: #808080;
+    text-decoration: none;
+}
+
+li:nth-child(1):hover {
+    background-color: #FF0000;
+}
+
+li:nth-child(2):hover {
+    background-color: #FFA500;
+}
+
+li:nth-child(3):hover {
+    background-color: #FFFF00;
+}
+
+li:nth-child(4):hover {
+    background-color: #008000;
+}
+
+li:nth-child(5):hover {
+    background-color: #0000FF;
+}
+
+li:nth-child(6):hover {
+    background-color: #800080;
+}
+
+section {
+    display: inline-block;
+    width: 940px;
+    margin-right: 44px;
+}
+
+section > article {
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+section > article:first-of-type {
+    margin-top: 40px;
+}
+
+section > article:last-of-type {
+    margin-bottom: 25px;
+}
+
+article > header {
+   font-size: 30px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin: 15px;
+}
+
+#webColors {
+    color: #FFFFFF;
+    background-color: #FF0000;
+}
+
+#webSafeColors {
+    color: #000000;
+    background-color: #FFA500;
+}
+
+#RGB {
+    color: #000000;
+    background-color: #FFFF00;
+}
+
+#RGBA {
+    color: #FFFFFF;
+    background-color: #008000;
+}
+
+#\#HSLHSV {
+    color: #FFFFFF;
+    background-color: #0000FF;
+}
+
+#\#lorem {
+    color: #FFFFFF;
+    background-color: #800080;
+}
+
+div:first-line {
+    font-style: italic;
+    line-height: 40px;
+}
+
+div:first-letter {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+footer > a {
+    line-height: 30px;
+    font-style: italic;
+    color: #808080;
+}
+
+span:first-of-type:before {
+    content: "\"";
+}
+
+span:first-of-type:after {
+    content: "\"";
+}
+
+span:first-of-type {
+    font-style: italic;
+    color: #00008B;
+}

@@ -1,0 +1,137 @@
+body {
+    background-color: #00923E;
+    font-family: Tahoma,Geneva,Kalimati,sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 2px black;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #F8C711;
+    font-weight: bold;
+    font-size: 22px;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+table tr:first-child th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+table tr:first-child th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #C8C8C8;
+}
+
+table tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+table tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+.headingRightAlign {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.headingLeftAlign {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.headingCenterAlign {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rightAlign {
+    text-align: right;
+    padding-left: 55px;
+    padding-right: 5px;
+}
+
+.leftAlign {
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.centerAlign {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img {
+    width: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: text-bottom;
+}
+
+select {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+select:disabled {
+    color: red;
+    background-color: #DCDCDC;
+}
+
+select:enabled {
+    color: green;
+}
+
+.roundButton {
+    display:block;
+    width:40px;
+    height:40px;
+    border:1px solid #f5f5f5;
+    border-radius: 50%;
+    text-align:center;
+    box-shadow: 0 0 2px gray;
+    margin: 5px;
+}
+
+.roundButton:disabled {
+    color: white;
+    background: #ba2f1c;
+}
+
+.roundButton:disabled:hover {
+    background: #5b1a13;
+}
+
+.roundButton:enabled {
+    color: white;
+    background: #00ba07;
+}
+
+.roundButton:enabled:hover {
+    background: #004c01;
+}
