@@ -1,0 +1,32 @@
+@import "reset.css";
+
+body {
+    font-family: Tahoma,Geneva,Kalimati,sans-serif;
+}
+
+table {
+    border: 1px solid #d3d3d3;
+    width: 360px;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+    font-size: 27px;
+    padding: 5px;
+    padding-bottom: 35px;
+}
+
+td {
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+img {
+    width: 130px;
+    padding-bottom: 5px;
+}
+
+div:first-child {
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+body {
+    font-family: Tahoma,Geneva,Kalimati,sans-serif;
+}
+
+table, th, td, tr {
+    border: 1px solid black;
+}
+
+body > table > tbody > tr > td:first-of-type {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+img {
+    width: 150px;
+}
+
+table tr td table {
+    margin: 10px;
+}
+
+table tr td table td {
+    font-size: 60px;
+    padding: 10px;
+}

@@ -1,0 +1,20 @@
+body {
+    font-family: Tahoma,Geneva,Kalimati,sans-serif;
+}
+
+table {
+    border: 1px solid black;
+}
+
+th, tr, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+thead th {
+    font-size: 24px;
+}
+
+tfoot {
+    text-align: right;
+}

@@ -1,0 +1,93 @@
+body {
+    font-family: Tahoma,Geneva,Kalimati,sans-serif;
+}
+
+th button {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+button {
+    font-size: 20px;
+}
+
+
+
+body > table, th, tr, td {
+    border: 1px solid black;
+}
+
+body > table > tbody > tr > td > table td {
+    border: 0;
+}
+
+button {
+    color: #0000EE;
+    background: -webkit-linear-gradient(#F1F1F1, #F1F1F1 40%, #ECECEC 40%, #D2D2D2 40%, #D2D2D2);
+    background: -o-linear-gradient(#F1F1F1, #F1F1F1 40%, #D2D2D2 40%, #D2D2D2);
+    background: -moz-linear-gradient(#F1F1F1, #F1F1F1 40%, #D2D2D2 40%, #D2D2D2);
+    background: linear-gradient(#F1F1F1, #D2D2D2);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+th, body > table > tbody > tr > td {
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    text-shadow: 0 1px black;
+}
+
+body > table > thead > tr button{
+    width: 480px;
+    height: 110px;
+}
+
+body > table > tbody > tr {
+    height: 110px;
+}
+
+body > table > tbody > tr:first-child button {
+    width: 233px;
+    height: 110px;
+}
+
+body > table > tbody > tr:nth-child(2) button {
+    width: 110px;
+    height: 110px;
+}
+
+body > table > tbody > tr:nth-child(3) > td:first-child button {
+    width: 110px;
+    height: 110px;
+}
+
+body > table > tbody > tr:nth-child(3) > td:nth-child(2) button {
+    width: 233px;
+    height: 110px;
+}
+
+body > table > tbody > tr:nth-child(3) > td:nth-child(3) > table > tbody > tr:first-child > td button {
+    height: 50px;
+    width: 104px;
+    font-size: 16px;
+}
+
+body > table > tbody > tr:nth-child(3) > td:nth-child(3) > table > tbody > tr:last-child > td button {
+    height: 50px;
+    width: 104px;
+    font-size: 16px;
+}
+
+body > table > tbody > tr:nth-child(4) > td:nth-child(1) button{
+    text-align: right;
+    font-size: 25px;
+    width: 358px;
+    height: 110px;
+}
+
+body > table > tbody > tr:nth-child(4) > td:nth-child(2) button{
+    width: 110px;
+    height: 110px;
+}

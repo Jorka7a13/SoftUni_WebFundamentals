@@ -1,0 +1,26 @@
+@import "reset.css";
+
+body {
+    font-family: Tahoma,Geneva,Kalimati,sans-serif;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-size: 30px;
+    height: 45px;
+    width: 399px;
+}
+
+button {
+    width: 100px;
+    height: 65px;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}

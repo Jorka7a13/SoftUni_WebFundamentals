@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <script src="scripts/calculator.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <td colspan="4">
+                <input id="input"type="text" value="0" readonly/>
+            </td>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button id="one" onclick="addOne()">1</button></td>
+                <td><button id="two" onclick="addTwo()">2</button></td>
+                <td><button id="three" onclick="addThree()">3</button></td>
+                <td><button id="plus" onclick="addPlus()">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="four" onclick="addFour()">4</button></td>
+                <td><button id="five" onclick="addFive()">5</button></td>
+                <td><button id="six" onclick="addSix()">6</button></td>
+                <td><button id="-" onclick="addMinus()">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="seven" onclick="addSeven()">7</button></td>
+                <td><button id="eight" onclick="addEight()">8</button></td>
+                <td><button id="nine" onclick="addNine()">9</button></td>
+                <td><button id="multiplication" onclick="addMul()">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="cancel" onclick="clearText()">C</button></td>
+                <td><button id="zero" onclick="addZero()">0</button></td>
+                <td><button id="result" onclick="calculate()">=</button></td>
+                <td><button id="division" onclick="addDiv()">/</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
