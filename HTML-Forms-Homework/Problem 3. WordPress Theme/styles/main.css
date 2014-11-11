@@ -1,0 +1,28 @@
+@import "reset.css";
+
+body {
+    font-family: Tahoma, Geneva, Kalimati, sans-serif;
+}
+
+#logo > img {
+    display: block;
+    width: 400px;
+}
+
+input[type="image"] {
+    width: 35px;
+    vertical-align: text-bottom;
+}
+
+input[type="search"] {
+    height: 30px;
+    vertical-align: text-bottom;
+}
+
+label {
+    padding-left: 30px;
+}
+
+div {
+    padding-top: 20px;
+}

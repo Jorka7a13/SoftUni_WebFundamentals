@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flight Order</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+    <form action="#" method="post">
+        <header>Flight Order</header>
+        <fieldset>
+            <label for="from">From</label>
+            <select name="city" id="from">
+                <option selected style="display:none;">enter a city</option>
+                <option value="sofia">Sofia</option>
+                <option value="plovdiv">Plovdiv</option>
+                <option value="varna">Varna</option>
+                <option value="burgas">Burgas</option>
+                <option value="pleven">Pleven</option>
+            </select>
+            <label for="departureDate">Departure Date</label>
+            <input type="date" id="departureDate"/>
+            <label for="returnDate">Return Date</label>
+            <input type="date" id="returnDate"/>
+            <div>
+                <div class="inlineDiv">
+                    <label for="12+">12+</label>
+                    <input type="number" id="12+" value="0"/>
+                </div>
+                <div class="inlineDiv">
+                    <label for="2-12">2-12</label>
+                    <input type="number" id="2-12" value="0"/>
+                </div>
+                <div class="inlineDiv">
+                    <label for="0-2">0-2</label>
+                    <input type="number" id="0-2"/>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="to">To</label>
+            <select name="city" id="to">
+                <option selected style="display:none;">enter a city</option>
+                <option value="sofia">Sofia</option>
+                <option value="plovdiv">Plovdiv</option>
+                <option value="varna">Varna</option>
+                <option value="burgas">Burgas</option>
+                <option value="pleven">Pleven</option>
+            </select>
+            <div id="checkboxDiv">
+                <input type="checkbox" id="directsCheckbox"/>
+                <label for="directsCheckbox" id="checkboxLabel">Prefer directs</label>
+            </div>
+            <label for="depTimeStart">Time Interval</label>
+            <input type="time" id="depTimeStart"/>
+            <input type="time"/>
+            <label for="retTimeStart">Time Interval</label>
+            <input type="time" id="retTimeStart"/>
+            <input type="time"/>
+            <label for="classSelect">Choose class</label>
+            <select name="travelClass" id="classSelect">
+                <option value="economy" selected>Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First</option>
+            </select>
+            <input type="submit" value="Search"/>
+        </fieldset>
+    </form>
+</body>
+</html>

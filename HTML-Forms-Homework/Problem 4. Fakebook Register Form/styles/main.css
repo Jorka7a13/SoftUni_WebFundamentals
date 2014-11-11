@@ -1,0 +1,142 @@
+@import "reset.css";
+
+body {
+    font-family: Tahoma, Geneva, Kalimati, sans-serif;
+    background: #3B5997;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 280px;
+}
+
+span {
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 350px;
+    padding-top: 35px;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 335px;
+    padding-top: 10px;
+}
+
+fieldset {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+legend {
+    text-align: center;
+}
+
+label {
+    margin: 5px;
+}
+
+input[type="text"], input[type="email"],
+input[type="tel"], input[type="password"],
+input[type="number"] {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    margin: 5px;
+}
+
+input[type="datetime"] {
+    width: 230px;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    margin: 5px;
+}
+
+select {
+    width: 170px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    margin: 5px;
+}
+
+
+input[name="number"], input[name="floor"],
+input[name="apNumber"] {
+    width: 80px;
+}
+
+input[type="color"] {
+    width: 165px;
+    height: 25px;
+    padding: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+}
+
+textarea {
+    display: block;
+    width: 97%;
+    height: 75px;
+    margin: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="reset"] {
+    width: 390px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: #3B5997;
+    background-color: #DDDDDD;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    width: 575px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: #3B5997;
+    background-color: #DDDDDD;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+}
