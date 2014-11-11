@@ -1,0 +1,75 @@
+@media only screen and (max-width: 959px) {
+    #container {
+        width: 100%;
+    }
+
+    header nav {
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    #sidebar {
+        float: right;
+        margin-right: 35px;
+    }
+
+    #sidebar #social{
+        float: none;
+    }
+
+    #content {
+        float: left;
+        margin-right: 5px;
+        width: 50%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer #back-top {
+        position: relative;
+        left: -50px;
+    }
+}
+
+@media only screen and (max-width: 759px) {
+    header nav {
+        display: block;
+        float: left;
+        clear: both;
+    }
+
+    header nav li {
+        width: 100px;
+        margin: 0;
+    }
+
+    #sidebar {
+        float: left;
+        width: 90%;
+    }
+
+    #categories, #social, #latest{
+        display: inline-block;
+    }
+
+    #sidebar #search #searchbar {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    #content {
+        width: 90%;
+    }
+
+    header nav {
+        float: left;
+        width: 200px;
+    }
+
+    #latest {
+        display: block;
+    }
+}
