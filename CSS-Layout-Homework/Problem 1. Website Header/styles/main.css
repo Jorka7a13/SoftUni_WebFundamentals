@@ -1,0 +1,175 @@
+@import "reset.css";
+
+body {
+    font-family: Tahoma, Geneva, Kalimati, sans-serif;
+}
+
+header {
+    background: #234465;
+    overflow: auto;
+    width: 100%
+}
+
+div {
+    display: inline-block;
+}
+
+#headerLogo {
+    padding-top: 20px;
+    padding-left: 105px;
+    padding-bottom: 20px;
+}
+
+.beta {
+    position: relative;
+    vertical-align: top;
+    top: 6px;
+    left: -30px;
+    font-size: 11px;
+    color: white;
+}
+
+#headerContent {
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.block {
+    display: block;
+    float: right;
+}
+
+.block:first-child {
+    float: right;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#notificationNumber {
+    vertical-align: super;
+}
+
+#notifications {
+    vertical-align: middle;
+}
+
+#userName {
+    padding-left: 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+#userName:after {
+    padding-left: 5px;
+    content: url("../images/dropdown.png");
+}
+
+input {
+    height: 23px;
+    width: 210px;
+    border: 1px solid #b3b3b3;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+/*Placeholder padding for different browsers*/
+input::-webkit-input-placeholder {
+    padding-left: 5px;
+}
+
+input:-moz-placeholder {
+    padding-left: 5px;
+}
+
+input::-moz-placeholder {
+    padding-left: 5px;
+}
+
+input:-ms-input-placeholder {
+    padding-left: 5px;
+}
+/*Placeholder padding end*/
+
+button {
+    position: relative;
+    left: -5px;
+    background: url("../images/search-btn.png") no-repeat;
+    width: 26px;
+    height: 27px;
+    vertical-align: middle;
+    border: 1px solid #b3b3b3;
+    border-left: none;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.block:last-child {
+    clear: right;
+    padding-top: 18px;
+}
+
+li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding-right: 20px;
+}
+
+li:last-child {
+    padding-right: 5px;
+}
+
+.dropdown:after {
+    content: url("../images/dropdown.png");
+}
+
+nav > ul > li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding-right: 20px;
+}
+
+nav > ul > li:last-child {
+    padding-right: 5px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li ul {
+    position: absolute;
+    background: #234465;
+    top: 90px;
+    left: 0;
+    display: none;
+    visibility: hidden;
+}
+
+ul li:nth-child(2) ul {
+    left: 590px;
+    width: 170px;
+}
+
+ul li:nth-child(3) ul {
+    left: 820px;
+    width: 155px;
+}
+
+ul li ul li {
+    background: #234465;
+    display: block;
+    color: white;
+}
+
+ul li:hover ul {
+    display: block;
+    visibility: visible;
+}

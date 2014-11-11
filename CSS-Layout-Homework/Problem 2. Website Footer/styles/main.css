@@ -1,0 +1,111 @@
+@import "reset.css";
+
+body {
+    font-family: Tahoma, Geneva, Kalimati, sans-serif;
+}
+
+footer {
+    background: #234465;
+    color: #FFFFFF;
+}
+
+#footerContent {
+    padding-top: 40px;
+    margin-left: 100px;
+    padding-bottom: 60px;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 50px;
+}
+
+section:first-child {
+    margin-right: 30px;
+}
+
+section:first-child input {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background: #234465;
+    color: #FFFFFF;
+    border: 2px solid #FA9A02;
+}
+
+section:first-child input:hover {
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    background: #FA9A02;
+    cursor: pointer;
+}
+
+section:first-child input:first-child {
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FA9A02;
+    padding-bottom: 20px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a:hover {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    color: #FA9A02;
+}
+
+#socialButtons {
+    margin-top: 30px;
+}
+
+#socialButtons input {
+    width: 28px;
+    height: 28px;
+    border: none;
+    margin-right: 10px;
+    color: transparent;
+}
+
+#socialButtons input:hover {
+    cursor: pointer;
+}
+
+#twitter {
+    background: url("../images/twitter-logo.png") no-repeat;
+}
+
+#facebook {
+    background: url("../images/facebook-logo.png") no-repeat;
+}
+
+#googlePlus {
+    background: url("../images/googleplus-logo.png") no-repeat;
+}
+
+#likeBox {
+    position: relative;
+    background: #E9ECEF;
+    float: right;
+    padding: 0;
+    margin: 0px;
+    left: -30px;
+}
