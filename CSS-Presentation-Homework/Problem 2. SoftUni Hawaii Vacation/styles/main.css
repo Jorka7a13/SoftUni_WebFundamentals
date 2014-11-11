@@ -1,0 +1,37 @@
+@import "reset.css";
+
+@font-face {
+    font-family: Animated;
+    src: url("../fonts/Animated.ttf");
+}
+
+body {
+    font-family: Animated, Geneva, Kalimati, sans-serif;
+    font-size: 45px;
+    color: #FFBE18;
+}
+
+main {
+    width: 900px;
+    background: #f9f9f9;
+    background: -moz-radial-gradient(20% 30%, ellipse cover,  #f9f9f9 4%, #f9f7b3 9%, #f9f7b3 9%, #ecf3fb 15%, #ecf3fb 17%, #ecf3fb 19%, #0068db 100%);
+    background: -webkit-gradient(radial, 20%  30% center, 0px, center center, 100%, color-stop(4%,#f9f9f9), color-stop(9%,#f9f7b3), color-stop(9%,#f9f7b3), color-stop(15%,#ecf3fb), color-stop(17%,#ecf3fb), color-stop(19%,#ecf3fb), color-stop(100%,#0068db));
+    background: -webkit-radial-gradient(20% 30%, ellipse cover,  #f9f9f9 4%,#f9f7b3 9%,#f9f7b3 9%,#ecf3fb 15%,#ecf3fb 17%,#ecf3fb 19%,#0068db 100%);
+    background: -o-radial-gradient(20% 30%, ellipse cover,  #f9f9f9 4%,#f9f7b3 9%,#f9f7b3 9%,#ecf3fb 15%,#ecf3fb 17%,#ecf3fb 19%,#0068db 100%);
+    background: -ms-radial-gradient(20% 30%, ellipse cover,  #f9f9f9 4%,#f9f7b3 9%,#f9f7b3 9%,#ecf3fb 15%,#ecf3fb 17%,#ecf3fb 19%,#0068db 100%);
+    background: radial-gradient(ellipse at 20% 30%,  #f9f9f9 4%,#f9f7b3 9%,#f9f7b3 9%,#ecf3fb 15%,#ecf3fb 17%,#ecf3fb 19%,#0068db 100%);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+section {
+    height: 600px;
+    background-image: url("../images/TediHula.png"), url("../images/PetiaHula.png"), url("../images/VladoGHula.png"), url("../images/AlexHula.png"), url("../images/NakovHula.png"), url("../images/VladoKHula.png"), url("../images/HawaiiBackground.png");
+    background-repeat: no-repeat;
+    background-position: 35% 95%, 27% 90%, 6% 93%, 76% 91%, 61% 79%, 98% 95%, left bottom;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Styling a HTML Form</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+    <main>
+        <form>
+        <section>
+            <header>
+                <h1>Step 1: Your details</h1>
+            </header>
+            <div>
+                <label>Name</label>
+                <input placeholder="  First and last name"><br>
+            </div>
+            <div>
+                <label>Email</label>
+                <input placeholder="  example@domain.com"><br>
+            </div>
+            <div>
+                <label>Phone</label>
+                <input placeholder="  eg. +447500000000"><br>
+            </div>
+
+        </section>
+        <section>
+            <header>
+                <h1>Step 1: Delivery Address</h1>
+            </header>
+            <div>
+                <label>Address</label>
+                <textarea></textarea><br>
+            </div>
+            <div>
+                <label>Post code</label>
+                <input><br>
+            </div>
+            <div>
+                <label>Country</label>
+                <input><br>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h1>Step 1: Card Details</h1>
+            </header>
+            <div>
+                <label>Card type</label> <br/>
+                <input type="radio" name="card"><span class="visa"></span><span class="creditCard">VISA</span>
+                <input type="radio" name="card"><span class="amex"></span>AmEx
+                <input type="radio" name="card"><span class="mastercard"></span>Mastercard<br>
+            </div>
+            <div>
+                <label>Card number</label>
+                <input/><br>
+            </div>
+            <div>
+                <label>Security code</label>
+                <input/><br>
+            </div>
+            <div>
+                <label>Name on card</label>
+                <input placeholder="  extract name as on the card"><br>
+            </div>
+        </section>
+        </form>
+        <button>BUY IT!</button>
+    </main>
+</body>
+</html>

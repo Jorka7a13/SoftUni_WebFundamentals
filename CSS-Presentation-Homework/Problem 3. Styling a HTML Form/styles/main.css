@@ -1,0 +1,135 @@
+@import "reset.css";
+
+html {
+    background: url("../images/formBackground.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: Tahoma, Geneva, Kalimati, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div {
+    width: 500px;
+    margin-bottom: 2px;
+    background-color: rgba(185, 206, 227, 0.5);
+    border: 1px solid #B9CEE3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 8px 0 5px 10px;
+}
+
+input:not([type='radio']) {
+    height: 25px;
+    width: 300px;
+    float: right;
+    display: inline-block;
+    margin-right: 60px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+}
+
+textarea {
+    height: 100px;
+    width: 300px;
+    float: right;
+    display: inline-block;
+    margin-right: 60px;
+    margin-bottom: 15px;
+    resize: vertical;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+}
+
+input:focus {
+    background-color: #EAEAEA;
+}
+
+textarea:focus {
+    background-color: #EAEAEA;
+}
+
+label {
+    display:inline-block;
+    padding-top: 4px;
+}
+
+section:nth-child(3) div:nth-child(2) label {
+    padding-bottom: 15px;
+}
+
+section:nth-child(3) div:nth-child(2) {
+    padding-bottom: 15px;
+}
+
+input[type='radio'] {
+    margin-left: 20px;
+}
+
+.creditCard {
+    padding-right: 20px;
+}
+
+span.visa {
+    display: inline-block;
+    width: 24px;
+    height: 15px;
+    background: #ffffff;
+    background-image: url("../images/visa-logo.svg");
+    background-size: 25px auto;
+    background-repeat: no-repeat;
+}
+
+span.amex {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-image: url("../images/amex-logo.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+
+span.mastercard {
+    display: inline-block;
+    width: 25px;
+    height: 16px;
+    background: #ffffff;
+    background-image: url("../images/mastercard-logo.svg");
+    background-size: 25px 16px;
+    background-repeat: no-repeat;
+}
+
+button {
+    display: inline-block;
+    color: #ffffff;
+    background: #04152F;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-left: 200px;
+}
