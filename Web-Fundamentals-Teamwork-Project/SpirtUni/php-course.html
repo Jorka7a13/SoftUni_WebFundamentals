@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Пий'N'Пий</title>
+    <link href="images/favico.png" rel="shortcut icon" type="image/x-icon">
+    <link href="bootstrap/css/resetter.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="bootstrap/css/course.css" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#head").load("header-course.html");
+            $("#foot").load("footer.html");
+        });
+    </script>
+    <script>
+        function menu() {
+            var button = document.getElementById("menu").className = "nav dropdown";
+            var menu = document.querySelector(".topmenu");
+            if (menu.style.display == 'none')
+                menu.style.display = "inline";
+            else
+                menu.style.display = "none";
+        }
+    </script>
+    <style type="text/css">
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<header id="head"></header>
+<main>
+    <div class="mainContainer">
+        <h3 class="jibri-title">Пий'N'Пий ноември 2014</h3>
+        <div class="contentBox">
+            <div class="courseDescription">
+                <p>Курсът "Пий'N'Пий" с безсмислен (като повечето ни курсове) и няма някаква цел. Просто ще пием</p>
+                <p>Пияниците в курса разработват и защитават на живо практически екипен проект, състоящ се от изработване на собствено вино, пред комисия. Курсът завършва с <strong>практически изпит</strong> ("изпит" идва от гл. "пия" в мин.вр.), който изисква изпиване на бидон вино за 5 часа, присъствено, на маса, с автоматизирано оценяване в реално време. (Ако повърнете сте автоматично изключен от университета, дори и все още да не сте приети).</p>
+                <p>Забележка:  Курсът е достъпен само за студенти носещи медицинско, удостоверяващо че нямате проблеми с черния дроб.</p>
+            </div>
+            <div class="hr"><hr/></div>
+            <div class="courseDates">
+                <div class="date"><span class="bold">Стартова дата:</span> 28-10-2014</div>
+                <div class="date"><span class="bold">Крайна дата: дата:</span> 21-11-2014</div>
+            </div>
+            <div class="hr"><hr/></div>
+            <div class="lecturesTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Име на лекцията</th>
+                            <th>Материали</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Напиване в парк</td>
+                            <td>Вдка - 500мл<br/>Вино - 2 х 700мл<br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Напиване пред блока</td>
+                            <td>Водка - 200мл<br/>Долнопробен ром - 700мл<br/>Бира - 3-4 х 500мл
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Напиване в домашни условия</td>
+                            <td>Домашна ракия - 1 кило<br/>Вино - кило<br/>Нещо за замезване
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Напиване в градския транспорт</td>
+                            <td>Водка "Търговище" - 700мл<br/>Найлоново пликче (познайте защо)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="foot"></footer>
+</body>
+</html>

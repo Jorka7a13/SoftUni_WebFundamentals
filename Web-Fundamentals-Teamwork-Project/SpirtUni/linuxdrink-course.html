@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Надпиване с пингвини</title>
+    <link href="images/favico.png" rel="shortcut icon" type="image/x-icon">
+    <link href="bootstrap/css/resetter.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="bootstrap/css/course.css" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#head").load("header-course.html");
+            $("#foot").load("footer.html");
+        });
+    </script>
+    <script>
+        function menu() {
+            var button = document.getElementById("menu").className = "nav dropdown";
+            var menu = document.querySelector(".topmenu");
+            if (menu.style.display == 'none')
+                menu.style.display = "inline";
+            else
+                menu.style.display = "none";
+        }
+    </script>
+    <style type="text/css">
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<header id="head"></header>
+<main>
+    <div class="mainContainer">
+        <h3 class="jibri-title">Надпиване с пингвини декември(естествено) 2014</h3>
+        <div class="contentBox">
+            <div class="courseDescription">
+                <p>Целта на курса <strong>"Надпиване с пингвини"</strong> е да се запознаят участниците с консумацията на алкохол в <strong>дива среда</strong>. Лекциите се провеждат на открито в Антарктида. Ще бъдат представени добри практики при консумация, дестилация и варене на всички видове алкохол <strong>в затруднени условия</strong>.</p>
+                <p>Spirtware University не носи отговорност за студентите по време на тази експедиция, както и за нищо друго в този живот. Ако срещнете бели мечки ви съветваме да им <strong>предложите от запасите си с водка</strong>, тъй като те хич не обичат егоистичните пияници.</p>
+                <p>Забележка:  Всички разходи по пътуването, издаване на документи и подкупи за граничари и лектори трябва да бъдат покрити от студентите. Лекторите приемат подкупи и в "течен" вариант.</p>
+            </div>
+            <div class="hr"><hr/></div>
+            <div class="courseDates">
+                <div class="date"><span class="bold">Стартова дата:</span> 8-12-2014</div>
+                <div class="date"><span class="bold">Крайна дата: дата:</span> 2-1-2015</div>
+            </div>
+            <div class="hr"><hr/></div>
+            <div class="lecturesTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Име на лекцията</th>
+                            <th>Материали</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Подготовка за експедицията</td>
+                            <td>Дебели дрехи<br/>Много алкохол, за предпочитане евтина водка<br/>Кирка за лед (ледът е за водката)<br/>Сурово месо (истинските мъже го ядат само сурово)<br/>Захар за лекцията по ферментация
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Отпътуване</td>
+                            <td>Самолетни билети от тези Last Minute, понеже другите са много скъпи<br/>Дълго сако, с което да внесете нелегален алкохол на борда на самолета. Все пак полета е дълъг.<br/>Пликче за повръщане, въпреки че ако повръщате от пиене, явно не сте за тук<br/>Фъстъци
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Етикеция за запознаване с пингвини</td>
+                            <td>Етикцията включва единствено бутилка пийние за подарък
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Бойни изкуства за самозащита от бели мечки</td>
+                            <td>Нунджако<br/>Сурово месо или друг студент за стръв<br/>Удобни обувки за бягане
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="foot"></footer>
+</body>
+</html>

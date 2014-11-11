@@ -1,0 +1,107 @@
+html {
+    font: "tahoma", "arial", "helvetica", "sans-serif";
+    font-size: 15px;
+}
+
+.jibri-title {
+    margin-left: 114px;
+    color: #234465;
+
+}
+
+.contentBox {
+    width: 1120px;
+    height: 317px;
+    margin: 35px auto 35px auto;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.76);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+}
+
+.ok-image {
+    display: inline-block;
+    margin: 30px 0 0 30px;
+}
+
+.accept {
+    display: inline-block;
+    width: 832px;
+    color: #234465;
+    text-align: center;
+}
+
+.disclaimer {
+    font-size: 10px;
+    margin: 10px 0 0 10px;
+}
+
+@media screen and (max-width: 1140px) {
+    .contentBox {
+        width: 990px;
+        height: 220px;
+    }
+
+    .accept {
+        width: 81%;
+        font-size: 26px;
+    }
+
+    .ok-image {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .contentBox {
+        width: 800px;
+        height: 190px;
+    }
+
+    .accept {
+        width: 81%;
+        font-size: 19px;
+    }
+
+    .ok-image {
+        width: 15%;
+    }
+}
+
+
+@media screen and (max-width: 823px) {
+    .contentBox {
+        width: 500px;
+        height: 190px;
+    }
+
+    .accept {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .ok-image {
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .contentBox {
+        width: 320px;
+        height: 190px;
+    }
+
+    .accept {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .ok-image {
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+        width: 15%;
+    }
+}

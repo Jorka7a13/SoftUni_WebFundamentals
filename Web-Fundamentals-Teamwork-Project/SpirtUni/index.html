@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Начало - СпиртУни</title>
+    <link href="images/favico.png" rel="shortcut icon" type="image/x-icon">
+    <link href="bootstrap/css/resetter.css" rel="stylesheet"/>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="bootstrap/css/slider/slider.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="bootstrap/css/style.css" rel="stylesheet"/>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#head").load("header.html");
+            $("#foot").load("footer.html");
+
+        });
+    </script>
+    <style type="text/css">
+        .bs-example {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Home slider start -->
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./js/jssor.js"></script>
+<script type="text/javascript" src="./js/jssor.slider.js"></script>
+<script>
+    function menu() {
+
+
+        var button = document.getElementById("menu").className = "nav dropdown";
+        var menu = document.querySelector(".topmenu");
+        if (menu.style.display == 'none')
+            menu.style.display = "inline";
+        else
+            menu.style.display = "none";
+
+    }
+</script>
+<script>
+    jQuery(document).ready(function ($) {
+
+        var _CaptionTransitions = [];
+        _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+        _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+        _CaptionTransitions["T"] = { $Duration: 900, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+        _CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+        _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+        _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+        _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
+        _CaptionTransitions["RTTL|BR"] = { $Duration: 900, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+        _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+        _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+        _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+
+        var options = {
+            $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+            $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+            $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+            $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+            $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+            $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+            $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+            $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+            //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+            //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+            $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+            $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+            $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+            $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+            $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+            $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+            $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+            },
+
+            $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+            },
+
+            $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+            }
+        };
+
+        var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+        //responsive code begin
+        //you can remove responsive code if you don't want the slider scales while window resizes
+        function ScaleSlider() {
+            var bodyWidth = document.body.clientWidth;
+            if (bodyWidth)
+                jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+
+        ScaleSlider();
+
+        if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+            $(window).bind('resize', ScaleSlider);
+        }
+
+
+        if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+            $(window).bind("orientationchange", ScaleSlider);
+        }
+    });
+</script>
+<!-- Home slider end -->
+<header id="head"></header>
+<main>
+    <div class="row">
+        <div class="slide">
+            <div class="slider1_container" id="slider1_container">
+                <!-- Loading Screen -->
+                <div class="loading" u="loading">
+                    <div class="loading-ico">
+                    </div>
+                </div>
+                <!-- Slides Container -->
+                <div class="slides" u="slides">
+                    <div>
+                        <img u="image" src="./images/slider-images/1.png"/>
+
+                        <div class="title1">
+                            Станете професионален спиртовар само за 1 година
+                        </div>
+                        <div class="subtitle1">
+                            Възможност за получаване на лиценз след успешно преминаване на всички тестове с дрегер
+                        </div>
+                    </div>
+                    <div>
+                        <img u="image" src="./images/slider-images/2.png"/>
+
+                        <div class="title2">
+                            Качествено и съвременно образование, ориентирано към практиката
+                        </div>
+                        <div class="subtitle2">
+                            Нашата мисия е да направим обучаващите се в Спиртния Университет истински алкохолици
+                        </div>
+                    </div>
+                    <div>
+                        <img u="image" src="./images/slider-images/3.png"/>
+
+                        <div class="title3">
+                            Отборен проект по време на всеки курс
+                        </div>
+                        <div class="subtitle3">
+                            Защото напиването в екип е най-забавно
+                        </div>
+                    </div>
+                </div>
+                <div u="navigator" class="jssorb21">
+                    <!-- bullet navigator item prototype -->
+                    <div u="prototype"
+                         style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+                </div>
+                <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+        </span>
+                <!-- Arrow Right -->
+        <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+        </span>
+                <!-- Arrow Navigator Skin End -->
+            </div>
+            <!-- Jssor Slider End -->
+        </div>
+        <div class="maincontent">
+            <div class="content-left">
+                <h1 id="about">За университета</h1>
+                <img src="images/universityIcons.svg">
+
+                <p>За нас, както и за цялата алкохолна индустрия, е най-важен <strong>практическият опит.</strong>
+                    Нашата мисия е да направим хората, които обучаваме, способни да изпиват промишлени количества алкохол, <strong>без да припадат</strong> и да им съдействаме в това да <strong>избягват всякаква работа.</strong></br></br>
+
+                    Учебният план, по който се провеждат занятията в Спиртния Университет, се състои от няколко нива –
+                    едно подготвително ниво за приемния практически изпит (2 месеца и ~60 каси бира) и доста нива обучение по системно наливане, технологии на производство на спиртни напитки (всяко по 4 месеца или до изчерпване на количествата). Предоставя се възможност за получаване на <strong>
+                        лиценз</strong> за собствен <strong>казан за ракия</strong> пред един от нашите университети-партньори
+                    след допълнително обучение в градниките зад тях с продължителност 1 или 2 години.</p>
+            </div>
+            <div class="content-mid">
+                <h1>Бързо-наливни курсове</h1>
+                <img src="images/fastrack.jpg">
+
+                <div class="course-description"><p>Бързо-наливните курсовете представляват ускорени курсове, които ви позволяват <strong>да погълнете максимално количество алкохол за кратко време.</strong> След курса, организмът ви ще може да усвоява спирт изключително лесно, поради програмата ни, която включва
+                    <strong>много упражнения.</strong></p></div>
+            </div>
+            <div class="content-right">
+                <h1 class="news-title">Новини</h1>
+                <div class="news">
+                    <img class="news-image" src="images/news1.jpg">
+                    <a class="news-link" id="first-news" href="http://www.blitz.bg/news/article/297499">Пияни руснаци задържаха самолет</a>
+                </div>
+                <div class="news">
+                    <img class="news-image" src="images/news2.jpg">
+                    <a class="news-link" href="http://www.donbalon.eu/news136966.html#comments">Националните водят семинар по "Системно напиване"</a>
+                </div>
+                <div class="news">
+                    <img class="news-image" src="images/news3.jpg">
+                    <a class="news-link" href="http://bgtatko.bg/14829/ucheni-pieneto-pomaga-za-tvorchesko-reshavane-na-problemi/">Пиенето помага за творческо решаване на проблеми</a>
+                </div>
+
+                <div class="news">
+                    <img class="news-image" src="images/news4.jpg">
+                    <a class="news-link" href="http://alcoholbaddriver.bg/?p=facts">СпиртУни твърдо против шофирането след лекции!!!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="foot"></footer>
+</body>
+</html>

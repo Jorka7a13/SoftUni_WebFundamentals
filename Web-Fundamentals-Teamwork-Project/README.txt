@@ -1,0 +1,1 @@
+You can check the deployed web site at: http://kalvacha.net/spirtuni/
